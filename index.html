@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="header-container">
+            <div>
+                <div class="header__main">
+                    <div class="logo-menu">
+                        <div class="logo"><img src="img/barcelona-metro-logo%201.svg"></div>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#!">Main</a></li>
+                                <li class="menu__item"><a href="#!">Gallery</a></li>
+                                <li class="menu__item"><a href="#!">News</a></li>
+                                <li class="menu__item"><a href="#!">Profile</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="header__counter-item">
+                            <span class="phone">+544 3490 00000</span>
+                        </div>
+                        <div class="header__counter-item">
+                            <span class="callMe">Звони скорее!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__counter">
+                    Найдено 349 котов
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sortBy">
+            <div class="sortBy-text">Сортировать по:</div>
+            <div class="sortBy__button-wrapper">
+                <button class="sortButton" id="sort-price">
+                    Цене
+                </button>
+                <button class="sortButton" id="sort-age">
+                    Возрасту
+                </button>
+            </div>
+        </div>
+        <div class="card__list" id="card-list">
+
+        </div>
+        <button class="showMore" id="show-more">Показать еще</button>
+        <button class="arrow__top" id="arrow-top">
+            <img src="./img/arrow-alt.svg" alt="arrow-top">
+        </button>
+    </main>
+    <footer>
+        <div class="footer__text">
+            <div class="footer__text-buy">Успей купить!</div>
+            <div class="footer__text-subscribe">Подпишись и успей словить все акции</div>
+        </div>
+        <div class="footer__button-wrapper">
+            <form id="form_id" method="post" action="" onsubmit="javascript:return validate('form_id','email');" class="footer__button">
+                <input type="text" id="email" name="email" class="mailInput" placeholder="Email"></input>
+                <button type="submit" class="subscribeButton">Подписаться</button>
+            </form>
+            <div class="footer__checkbox-wrapper">
+                <input type="checkbox" id="check" class="checkbox">
+                <label for="check" class="footer__checkbox-wrapper-text">Подписаться на новости</label>
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="alert-wrapper"></div>
+</body>
+<script src="script.js"></script>
+
+</html>
